@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.alexvasilkov.gestures.views.GestureFrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gesture"
+        android:layout_centerHorizontal="true"
+        android:minHeight="300dp"
+        android:minWidth="300dp"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:id="@+id/resim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </com.alexvasilkov.gestures.views.GestureFrameLayout>
+
+    <TextView
+        android:layout_margin="5dp"
+        android:id="@+id/yazi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gesture"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="18sp" />
+
+</RelativeLayout>

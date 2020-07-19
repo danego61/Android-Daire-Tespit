@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:text="Tek Renk Dönüştürme" />
+
+    <TextView
+        android:id="@+id/lef"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="50dp"
+        android:layout_below="@id/top"
+        android:layout_margin="15dp"
+        android:text="İlk Tolerans Değeri:" />
+
+    <EditText
+        android:id="@+id/tole1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/lef"
+        android:minWidth="100dp"
+        android:gravity="center"
+        android:text="100"
+        android:layout_margin="15dp"
+        android:layout_below="@id/top" />
+
+    <TextView
+        android:id="@+id/le"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="50dp"
+        android:layout_below="@id/lef"
+        android:layout_margin="15dp"
+        android:text="İkinci Tolerans Değeri:" />
+
+    <EditText
+        android:id="@+id/tole2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/le"
+        android:minWidth="100dp"
+        android:gravity="center"
+        android:text="25"
+        android:layout_margin="15dp"
+        android:layout_below="@id/lef" />
+
+    <Button
+        android:id="@+id/kaydet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kaydet"
+        android:layout_below="@id/le"
+        android:layout_margin="15dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
